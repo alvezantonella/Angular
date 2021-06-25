@@ -1,0 +1,68 @@
+<div>
+  <h4>Dejanos tu consulta que con gusto nos pondremos en contacto</h4>
+</div>
+
+<form class="needs-validation desing" novalidate>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationTooltip01">Primer nombre</label>
+      <input type="text" class="form-control" id="validationTooltip01" placeholder="Tu bello nombre" value="" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationTooltip02">Segundo nombre</label>
+      <input type="text" class="form-control" id="validationTooltip02" placeholder="Tu 2do bello nombre" value=""
+        required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationTooltipUsername">Usuario</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+        </div>
+        <input type="email" class="form-control" id="validationTooltipUsername" placeholder="Username"
+          aria-describedby="validationTooltipUsernamePrepend" required>
+        <div class="invalid-tooltip">
+          Please choose a unique and valid username.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationTooltip03">Pais</label>
+      <input type="text" class="form-control" id="validationTooltip03" placeholder="Pais" required>
+      <div class="invalid-tooltip">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationTooltip04">Ciudad</label>
+      <input type="text" class="form-control" id="validationTooltip04" placeholder="Ciudad" required>
+      <div class="invalid-tooltip">
+        Please provide a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationTooltip05">Telefono</label>
+      <input type="text" class="form-control" id="validationTooltip05" placeholder="" required>
+      <div class="invalid-tooltip">
+        Please provide a valid zip.
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Deja aqui tu consulta y a la brevedad te contactaremos</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" cols="60" rows="5"></textarea>
+  </div>
+
+  <div>
+    <button class="btn btn-primary send" type="submit">Enviar formulario</button>
+    <button class="btn btn-primary send" type="reset">Limpiar formulario</button>
+  </div>
+</form>

@@ -1,0 +1,39 @@
+<div class="row" style="background: white;padding:15px 15px;margin: 0;">
+    <h2>Facturacion</h2>
+     <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" *ngFor="let item of columnas">{{item}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let curso of coursesArray">
+                <td><img [src]="curso.imagen" width="50px" height="50px" alt=""></td>
+                <td>{{curso.title | uppercase }}</td>
+                <td><strong> ${{curso.cost}}</strong></td>        
+            </tr>
+        </tbody>
+        <tfoot>
+            <div id="total">
+                <h6>Total:${{total}} </h6>
+            </div>
+        </tfoot>
+    </table>
+
+    <form class="row g-3">
+        <div class="col-auto">
+            <label>Monto recibido</label>
+        </div>
+        <div class="col-auto">
+            <input type="number" [(ngModel)]="monto" class="form-control" name="monto" placeholder="Monto">
+        </div>
+        <div class="col-auto" style="display: flex;">
+            <button style="margin-right: 8px;" class="btn btn-primary mb-3" (click)="handleCambio()">Facturar</button>
+            <div><label [class]="cambioDebe"><strong>Cambio: {{cambio}} $</strong></label></div>
+        </div>
+        <div>
+            <a class="btn btn-outline-success"  (click)="finalizarCompra()">Finalizar Compra</a>
+        </div>
+    </form>
+</div>
+

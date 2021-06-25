@@ -1,0 +1,120 @@
+{
+  "users": [
+    {
+      "id": 7,
+      "username": "Crhistian Moreira",
+      "password": "67843",
+      "role": "Admin"
+    },
+    {
+      "id": 8,
+      "username": "Mathias Ribero",
+      "password": "25256",
+      "role": "Usuario"
+    },
+    {
+      "id": 9,
+      "username": "Josefina Ristori",
+      "password": "6784",
+      "role": "Admin"
+    },
+    {
+      "id": 10,
+      "username": "Andreina Zurd",
+      "password": "567678",
+      "role": "Admin"
+    },
+    {
+      "id": 13,
+      "username": "Anabella Rodriguez",
+      "password": "12345",
+      "role": "Admin"
+    },
+    {
+      "id": 14,
+      "username": "yttj",
+      "password": "tyjtyj",
+      "role": "Admin"
+    }
+  ],
+  "profesionales": [
+    {
+      "id": 1,
+      "username": "Anabella Rodriguez",
+      "profesion": "Psicologa Clinica",
+      "age": 35,
+      "cost": "700"
+    },
+    {
+      "id": 2,
+      "username": "Esteban Antunez",
+      "profesion": "Psicologo Forense",
+      "age": 41,
+      "cost": "1250"
+    },
+    {
+      "id": 3,
+      "username": "Andrea Perez",
+      "profesion": "Psicologa Social",
+      "age": 28,
+      "cost": "690"
+    },
+    {
+      "id": 4,
+      "username": "Gonzalo Castillo",
+      "profesion": "Psicologo Clinico",
+      "age": 36,
+      "cost": "1600"
+    }
+  ],
+  "cursos": [
+    {
+      "id": 1,
+      "imagen": "../../../assets/1.webp",
+      "title": "Neuropsicología Clínica y Neuroeducación",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia ipsa",
+      "cost": "1500",
+      "date": 0
+    },
+    {
+      "id": 2,
+      "imagen": "../../../assets/2.jpg",
+      "title": "Grand Master en Psicología Clínica y Psicopatología Infantojuvenil ",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia ipsa",
+      "cost": "890",
+      "date": 0
+    },
+    {
+      "id": 3,
+      "imagen": "../../../assets/4.jpg",
+      "title": " Maestría en Psicología Forense y Psicodiagnóstico",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia ipsa",
+      "cost": "1620",
+      "date": 0
+    },
+    {
+      "id": 4,
+      "imagen": "../../../assets/5.jpg",
+      "title": "Diplomado en Psicodiagnóstico y Evaluación Psicológica ",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia ipsa",
+      "cost": "1000",
+      "date": 0
+    },
+    {
+      "id": 5,
+      "imagen": "../../../assets/6.jpg",
+      "title": "Especialización en el tratamiento psiquiátrico de la psicosis y demencias para psicólogos",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia ipsa",
+      "cost": "900",
+      "date": 0
+    },
+    {
+      "id": 6,
+      "imagen": "../../../assets/3188416.jpg",
+      "title": "Especialización en evaluación y estudio de la salud y el bienestar",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia ipsa",
+      "cost": "1490",
+      "date": 0
+    }
+  ]
+}

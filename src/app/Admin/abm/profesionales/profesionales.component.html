@@ -1,0 +1,51 @@
+<h4>Lista de profesionales</h4>
+
+<div>
+    <table class="table caption-top">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Profesion</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Costo arancel</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let prof of profesionalesArray" class=" list-group-item-action" (click)="openForEdit(prof)"
+            [class.active]="prof == selectedProfesional">
+            <tr>
+                <th scope="row">{{ prof.id }}</th>
+                <td>{{ prof.username }}</td>
+                <td> {{ prof.profesion }} </td>
+                <td>{{ prof.age }} años</td>
+                <td>{{prof.cost}}</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="container">
+        <div class="card mt-4">
+            <div class="card-body">
+                <div class="title">
+                    Agregar un nuevo profesional
+                </div>
+                <div class="form-group">
+                    <input type="text" [(ngModel)]="selectedProfesional.username" placeholder="Inserte nombre" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" [(ngModel)]="selectedProfesional.profesion" placeholder="Inserte profesion" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" [(ngModel)]="selectedProfesional.age" placeholder="Inserte su edad" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" [(ngModel)]="selectedProfesional.cost" placeholder="Inserte arancel" class="form-control">
+                </div>
+                <button (click)="addOrEdit()" class="btn btn-info">Añadir profesional</button>
+                <button *ngIf="selectedProfesional.id !==0" class="btn btn-outline-danger" (click)="delete()">Quitar</button>
+    
+            </div>
+        </div>
+    </div>
+</div>
+

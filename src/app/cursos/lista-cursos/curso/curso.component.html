@@ -1,0 +1,18 @@
+<div class="card" style="width: 18rem;">
+  <img [src]="curso.imagen" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{curso.title}}</h5>
+    <p class="card-text">{{curso.description}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{curso.cost}}</li>
+  </ul>
+  <!--<div class="qty">
+    <a (click)="plus()" class="btn btn-danger"><i class="bi bi-plus"></i></a>
+    <input type="text" [(ngModel)]="qty" style="width: 35px; margin: 2px 5px; text-align: center;">
+    <a (click)="less()" class="btn btn-danger"><i class="bi bi-file-minus"></i></a>
+</div>-->
+  <div class="card-body">
+    <a  (click)="addCart(curso)" class="btn btn-outline-warning card-link"><i class="bi bi-cart">Me interesa!</i></a>
+  </div>
+</div>

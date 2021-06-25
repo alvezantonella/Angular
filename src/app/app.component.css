@@ -1,0 +1,62 @@
+*{
+    margin: 0%;
+}
+
+.a {
+    margin: 5px;
+    margin-left: 700px;
+}
+
+/* BARRA MENU Y SUBMENU SUPERIOR */
+.nav-menu {
+    background-color: black;
+    display: flex;
+   
+    top: 0;
+    z-index: 3;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-menu ul {
+    display: flex;
+    margin: 0;
+}
+
+.sub_nav li a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.sub_nav li a:hover {
+    background-color: #434343;
+}
+
+.sub_nav > li {
+    float: left;
+}
+
+.sub_nav li ul {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.sub_nav li:hover > ul {
+    display: block;
+}
+
+.sub_nav li ul li {
+    position: relative;
+}
+
+.sub_nav li ul li ul {
+    right: -102px;
+    top: 0px;
+}

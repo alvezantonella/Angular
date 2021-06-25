@@ -1,0 +1,22 @@
+<!-- Navigation -->
+
+<head class="navbar navbar-light bg-light static-top">
+    <div>
+        <a class="navbar-brand" >Psyweb, tu espacio para conocerte</a>
+        <a class="btn btn-primary a" type="submit" [routerLink]="'/login'" aria-current="page">Ingresar</a>
+        <a class="btn btn-primary " >Registrarse</a> <!--Poner un form pidiendo datos de registro-->
+    </div>
+</head>
+
+<!--Navbar con ciclo for integrado para cambiar desde app.component-->
+<nav class="nav-menu">
+    <ul class="sub_nav">
+        <li class="nav-item" *ngFor="let item of menu">
+            <a class="{{item.class}}" [routerLink]="item.enlace">{{item.nombre}}</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
